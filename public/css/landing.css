@@ -1,18 +1,21 @@
-.top{
-    background: #2e3e50;
-    height: 100px;
+.marino-nav{
+    background: #142850;
 }
-.half{
-    background: #1abc9c;
-    height: 800px;
+body{
+    background: #1abc9c !important;
+    
+}
+.turquesa-fondo{
+  background: #1abc9c !important;
 }
 
-.masthead {
-    padding-top: calc(6rem + 74px);
-    padding-bottom: 6rem;
-  }
-  .masthead .masthead-heading {
-    font-size: 2.75rem;
-    line-height: 2.75rem;
-  }
+.gris-fondo{
+  background: #dae1e7 !important;
+}
+.azul-medio{
+  background: #27496d;
+}
+.avatar-home{
+  width: 48%;
+}
   
