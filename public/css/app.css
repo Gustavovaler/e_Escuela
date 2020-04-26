@@ -72,7 +72,7 @@ body {
   line-height: 1.6;
   color: #212529;
   text-align: left;
-  background-color: #f8fafc;
+  background-color: #00909e;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -4962,7 +4962,7 @@ input[type=button].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #dae1e7;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -6956,6 +6956,9 @@ a.close.disabled {
 
 .bg-primary {
   background-color: #3490dc !important;
+}
+.bg-top{
+  background-color: #142850 !important;
 }
 
 a.bg-primary:hover,
