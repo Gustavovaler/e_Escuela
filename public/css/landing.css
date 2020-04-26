@@ -18,4 +18,13 @@ body{
 .avatar-home{
   width: 48%;
 }
+.container-avatar{
+  
+  border: 1px solid #27496d;
+  border-radius: 5px;
+  padding: 20px;;
+}
+.container-avatar:hover{
+  border: 1px solid #ffffff;
+}
   
