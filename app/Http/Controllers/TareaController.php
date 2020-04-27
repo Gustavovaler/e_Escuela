@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Tarea;
+use App\Asignatura;
+use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class TareaController extends Controller
 {
@@ -12,10 +15,17 @@ class TareaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct(){
+       // $this->middleware('auth');
+    }
+
     public function index()
-    {
+    {  
         $tareas = Tarea::all();
-        return view('tarea.index', compact('tareas'));
+        $asignaturas = Asignatura::all();
+        $profesores = User::all();
+        return view('tarea.index', compact(['tareas', 'asignaturas','profesores']));
+      
     }
 
     /**
@@ -25,7 +35,15 @@ class TareaController extends Controller
      */
     public function create()
     {
-        return view('tarea.create');
+        if (Auth::check()){
+            if(Auth::user()->is_profesor){
+                return view('tarea.create');
+            }
+            else{
+               return view('forbidden');
+            }
+         }
+       
     }
 
     /**
@@ -35,7 +53,7 @@ class TareaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request, Tarea $tarea)
-    {       
+    {  
         $tarea->archivo = $request->input('archivo');
         $tarea->curso = $request->input('curso');
         $tarea->asignatura_id = $request->input('asignatura_id');
@@ -87,6 +105,6 @@ class TareaController extends Controller
      */
     public function destroy($id)
     {
-        //
+       return view('tarea.delete');
     }
 }
