@@ -3,30 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Tarea;
-use App\Asignatura;
-use App\User;
-use Illuminate\Support\Facades\Auth;
+use App\Establecimiento;
 
-class TareaController extends Controller
+class EstablecimientosController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function __construct(){
-       // $this->middleware('auth');
-       
-    }
-
     public function index()
-    {  
-        $tareas = Tarea::all();
-        $asignaturas = Asignatura::all();
-        $profesores = User::all();
-        return view('tarea.index', compact(['tareas', 'asignaturas','profesores']));
-      
+    {
+        $establecimientos = Establecimiento::all();
+       return view('establecimientos.index', compact('establecimientos'));
     }
 
     /**
@@ -36,15 +25,7 @@ class TareaController extends Controller
      */
     public function create()
     {
-        if (Auth::check()){
-            if(Auth::user()->is_profesor){
-                return view('tarea.create');
-            }
-            else{
-               return view('forbidden');
-            }
-         }
-       
+        //
     }
 
     /**
@@ -53,14 +34,9 @@ class TareaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Tarea $tarea)
-    {  
-        $tarea->archivo = $request->input('archivo');
-        $tarea->curso = $request->input('curso');
-        $tarea->asignatura_id = $request->input('asignatura_id');
-        $tarea->user_id = $request->input('user_id');
-        $tarea->save();
-        return redirect('/tarea');
+    public function store(Request $request)
+    {
+        //
     }
 
     /**
@@ -69,10 +45,9 @@ class TareaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Tarea $tarea)
+    public function show($id)
     {
-        $asignaturas = Asignatura::all();
-        return view('tarea.show', compact(['tarea', 'asignaturas']));
+        //
     }
 
     /**
@@ -106,6 +81,6 @@ class TareaController extends Controller
      */
     public function destroy($id)
     {
-       return view('tarea.delete');
+        //
     }
 }

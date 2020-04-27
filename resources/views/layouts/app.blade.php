@@ -41,6 +41,9 @@
                         <li class="nav-item">
                         <a href="{{ url('/tarea') }}" class="nav-link">Tareas</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/establecimientos') }}" class="nav-link">Establecimientos</a>
+                            </li>
                        
                     </ul>
 
