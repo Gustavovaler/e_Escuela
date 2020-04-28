@@ -66,7 +66,7 @@ class TareaController extends Controller
         $tarea->user_id = $request->input('user_id');
         $tarea->save();
         if (isset($file)) {
-           $file->move('files', $nombre_archivo);
+           $file->move(storage_path().'/app/files', $nombre_archivo);
         }
         return redirect('/tarea');
     }
@@ -117,10 +117,13 @@ class TareaController extends Controller
        return view('tarea.delete');
     }
 
-    public function download(){
+    public function download($file_name, $verbose_file_name){
 
-        $archivo2 = storage_path()."/app/files/1588044341fondoPNG.png";
+        $archivo2 = storage_path()."/app/files/".$file_name;
 
-        return response()->download($archivo2);
+        
+           
+        return  response()->download($archivo2, $verbose_file_name) ;
+
     }
 }
