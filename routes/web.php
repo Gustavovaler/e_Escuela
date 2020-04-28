@@ -21,6 +21,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('tarea/download', 'TareaController@download');
+
 Route::resource('tarea', 'TareaController');
 
 Route::resource('establecimientos', 'EstablecimientosController');

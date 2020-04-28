@@ -27,6 +27,44 @@
             
         </div>
         {{-- ******************** --}} 
+                {{-- ******************** --}}
+                <div class="col xs-4">
+
+                    <div class="card" style="width: 18rem">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <h3> Ver lista de profesores</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+        
+                        
+                            <a href="/tarea/" class="btn btn-primary">Lista completa</a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                {{-- ******************** --}} 
+                        {{-- ******************** --}}
+        <div class="col xs-4">
+
+            <div class="card" style="width: 18rem">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h3> Ver establecimientos registrados</h3>
+                    </div>
+                </div>
+                <div class="card-body">
+
+                
+                    <a href="/establecimientos/" class="btn btn-primary">Lista completa</a>
+                </div>
+            </div>
+            
+            
+        </div>
+        {{-- ******************** --}} 
      
 
 

@@ -44,6 +44,9 @@
                         <li class="nav-item">
                             <a href="{{ url('/establecimientos') }}" class="nav-link">Establecimientos</a>
                             </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Profesores</a>
+                        </li>
                        
                     </ul>
 

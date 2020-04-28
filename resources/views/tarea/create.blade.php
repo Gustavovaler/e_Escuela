@@ -10,10 +10,10 @@
 @endif
 
 <div class="container">
-    <form action='/tarea/' method="POST">
+    <form action='/tarea/' method="POST" enctype="multipart/form-data">
         @csrf
     <label for="archivo">Archivo</label>
-    <input type="text" name="archivo" class="form-control" required>
+    <input type="file" name="archivo" class="form-control" required>
     <label for="">Curso</label>
     <input type="text" name="curso" class="form-control" required>
     <label for="">Asignatura</label>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use App\Tarea;
 use App\Asignatura;
@@ -55,11 +56,18 @@ class TareaController extends Controller
      */
     public function store(Request $request, Tarea $tarea)
     {  
-        $tarea->archivo = $request->input('archivo');
+        $file =  $request->file('archivo');
+        $nombre_archivo = time() . $file->getClientOriginalName();  
+        $archivo_original = $file->getClientOriginalName();
+        $tarea->archivo = $nombre_archivo;
+        $tarea->archivo_verbose = $archivo_original;
         $tarea->curso = $request->input('curso');
         $tarea->asignatura_id = $request->input('asignatura_id');
         $tarea->user_id = $request->input('user_id');
         $tarea->save();
+        if (isset($file)) {
+           $file->move('files', $nombre_archivo);
+        }
         return redirect('/tarea');
     }
 
@@ -107,5 +115,12 @@ class TareaController extends Controller
     public function destroy($id)
     {
        return view('tarea.delete');
+    }
+
+    public function download(){
+
+        $archivo2 = storage_path()."/app/files/1588044341fondoPNG.png";
+
+        return response()->download($archivo2);
     }
 }
