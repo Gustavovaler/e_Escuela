@@ -48,7 +48,7 @@
                             <a href="{{ url('/establecimientos') }}" class="nav-link">Establecimientos</a>
                             </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Profesores</a>
+                        <a href="{{ url('profesores') }}" class="nav-link">Profesores</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Contacto</a>

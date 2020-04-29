@@ -26,3 +26,5 @@ Route::get('tarea/download/{file}/{verbose}', 'TareaController@download');
 Route::resource('tarea', 'TareaController');
 
 Route::resource('establecimientos', 'EstablecimientosController');
+
+Route::resource('profesores', 'ProfesorController' );
