@@ -4,7 +4,7 @@
 
 <div class="container">
 
-    <div class="nombre bg-dark">
+    <div class="nombre azul-medio">
         <h2 class="text-white m-3 p-2">{{$profesor[0]['name']}} {{$profesor[0]['apellido']}}</h2>
     </div>
     @foreach ($tareas as $tarea)

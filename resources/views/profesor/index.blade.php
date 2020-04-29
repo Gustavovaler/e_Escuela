@@ -5,7 +5,7 @@
 <div class="container">
     <div class="mt-5" style="width: 60%">
     <table class="table">
-      <thead class="thead-dark">
+      <thead class="thead text-white azul-medio">
         <tr>       
   
           <th class="col xs-4"><h4>Profesor</h4></th>

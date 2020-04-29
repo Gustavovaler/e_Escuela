@@ -27,4 +27,13 @@ body{
 .container-avatar:hover{
   border: 1px solid #ffffff;
 }
+
+.btn-azul-medio{
+  background: #27496d;
+}
+.btn-azul-medio:hover{
+  background: rgb(2, 121, 49); 
+  color : #142850; 
+
+}
   

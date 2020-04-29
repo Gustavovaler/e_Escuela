@@ -16,16 +16,22 @@
                 
             <form action='/tarea/' method="POST" enctype="multipart/form-data">
             @csrf
+                
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Nombre y apellido:</label>
+                <input type="text" class="form-control" name="nombre_completo" placeholder="Ej.  2do - 1ra T.Tarde" required>
+            </div>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Curso o Grado</label>
+                    <label for="exampleFormControlInput1">Email:</label>
                     <input type="text" class="form-control" name="curso" placeholder="Ej.  2do - 1ra T.Tarde" required>
                 </div>
+
                 <div class="form-group">
                     <label for="exampleFormControlSelect2">Materia o asignatura.</label>
                     <select multiple class="form-control" id="exampleFormControlSelect2" name="asignatura_id">
-                        @foreach($asignaturas as $asignatura)
-                            <option value="{{$asignatura->id}}">{{$asignatura->asignatura}}</option>
-                        @endforeach
+                        
+                            <option value="</option>
+                       
                     </select>
                 </div>
                    
@@ -33,12 +39,9 @@
                     <label for="descripcion">Descripción (Opcional)</label>
                     <textarea class="form-control"  rows="3" name="descripcion"></textarea>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlFile1">Elegir el archivo de la tarea.</label>
-                    <input type="file" class="btn btn-primary" id="exampleFormControlFile1" name="archivo"required>
-                </div>
+
                     <input type="text" name="user_id" class="form-control" required value="{{ Auth::user()->id }}" hidden><br>
-                    <input type="submit" class="btn btn-azul-medio text-white  btn-lg btn-block" value="Publicar Tarea">
+                    <input type="submit" class="btn btn-azul-medio text-white  btn-lg btn-block" value="Enviar">
 
             </form>
 

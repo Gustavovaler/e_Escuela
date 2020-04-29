@@ -4,7 +4,7 @@
 <div class="container">
 
   <table class="table">
-    <thead class="thead-dark">
+    <thead class="thead  text-white azul-medio">
       <tr>       
 
         <th scope="col">Profesor</th>

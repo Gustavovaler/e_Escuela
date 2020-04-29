@@ -28,3 +28,7 @@ Route::resource('tarea', 'TareaController');
 Route::resource('establecimientos', 'EstablecimientosController');
 
 Route::resource('profesores', 'ProfesorController' );
+
+Route::get('contacto', function(){
+    return view('contacto.index');
+});

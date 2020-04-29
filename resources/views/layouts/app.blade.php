@@ -55,7 +55,7 @@
                         <a href="{{ url('profesores') }}" class="nav-link">Profesores</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Contacto</a>
+                        <a href="{{ url('/contacto') }}" class="nav-link">Contacto</a>
                         </li>
                        
                     </ul>
