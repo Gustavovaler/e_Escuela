@@ -39,7 +39,8 @@ class TareaController extends Controller
     {
         if (Auth::check()){
             if(Auth::user()->is_profesor){
-                return view('tarea.create');
+                $asignaturas = Asignatura::all();
+                return view('tarea.create', compact('asignaturas'));
             }
             else{
                return view('forbidden');
