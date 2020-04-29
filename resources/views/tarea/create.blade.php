@@ -18,7 +18,8 @@
     <input type="text" name="curso" class="form-control" required>
     <label for="">Asignatura</label>
     <input type="number" name="asignatura_id" class="form-control" required>
-    
+    <label for="">Descripcion</label>
+    <input type="text" name="descripcion" class="form-control" >    
     <input type="text" name="user_id" class="form-control" required value="{{ Auth::user()->id }}" hidden><br>
     
     <input type="submit" class="btn btn-primary">

@@ -59,6 +59,7 @@ class TareaController extends Controller
         $file =  $request->file('archivo');
         $nombre_archivo = time() . $file->getClientOriginalName();  
         $archivo_original = $file->getClientOriginalName();
+        $tarea->descripcion = $request->input('descripcion');
         $tarea->archivo = $nombre_archivo;
         $tarea->archivo_verbose = $archivo_original;
         $tarea->curso = $request->input('curso');
@@ -79,8 +80,9 @@ class TareaController extends Controller
      */
     public function show(Tarea $tarea)
     {
+        $profesores = User::all();
         $asignaturas = Asignatura::all();
-        return view('tarea.show', compact(['tarea', 'asignaturas']));
+        return view('tarea.show', compact(['tarea', 'asignaturas', 'profesores']));
     }
 
     /**

@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="es">
 <head>
     <meta charset="utf-8">
@@ -11,8 +12,8 @@
 
     <!-- Scripts -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
+   
+    
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -23,6 +24,8 @@
 </head>
 <body>
     <div id="app">
+      
+       
         <nav class="navbar navbar-expand-md navbar-dark marino-nav shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -46,6 +49,9 @@
                             </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Profesores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contacto</a>
                         </li>
                        
                     </ul>
@@ -87,9 +93,11 @@
             </div>
         </nav>
 
+
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
