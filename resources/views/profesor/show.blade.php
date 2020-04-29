@@ -20,7 +20,7 @@
         <h4 class="text-muted">{{ $asignaturas->find($tarea->asignatura_id)->asignatura}}</h4>
         </div>
         <div class="col">
-            <a href=""><i>Descargar</i></a>
+            <a href="/tarea/download/{{$tarea->archivo}}/{{$tarea->archivo_verbose}}"><i>Descargar</i></a>
         </div>
     </div>
         

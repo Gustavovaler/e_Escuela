@@ -121,9 +121,7 @@ class TareaController extends Controller
 
     public function download($file_name, $verbose_file_name){
 
-        $archivo2 = storage_path()."/app/files/".$file_name;
-
-        
+        $archivo2 = storage_path()."/app/files/".$file_name;        
            
         return  response()->download($archivo2, $verbose_file_name) ;
 
