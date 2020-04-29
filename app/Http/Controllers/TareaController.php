@@ -23,7 +23,7 @@ class TareaController extends Controller
 
     public function index()
     {  
-        $tareas = Tarea::all();
+        $tareas = Tarea::paginate(15);
         $asignaturas = Asignatura::all();
         $profesores = User::all();
         return view('tarea.index', compact(['tareas', 'asignaturas','profesores']));

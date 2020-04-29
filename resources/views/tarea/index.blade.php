@@ -28,6 +28,21 @@
       @endforeach
     </tbody>
   </table>
+  <div class="row">
+    <div class="col">
+      
+    </div>
+    <div class="col align-self-center">
+      <div style="align-content: center">
+        {{ $tareas->links() }}
+      </div>
+      
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
+  
 </div>
 
 @endsection
