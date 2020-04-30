@@ -29,6 +29,6 @@ Route::resource('establecimientos', 'EstablecimientosController');
 
 Route::resource('profesores', 'ProfesorController' );
 
-Route::get('contacto', function(){
-    return view('contacto.index');
-});
+Route::get('contacto', 'ComentarioController@index');
+
+Route::post('contacto', 'ComentarioController@store');

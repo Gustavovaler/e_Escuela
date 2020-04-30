@@ -4,7 +4,14 @@
 @section('content')
 <div class="container">
 
-<h1 class="text-white">Establecimientos</h1>
+    <table class="table">
+        <thead class="thead  text-white azul-medio">
+            <tr>
+                <th scope="col">Establecimientos</th>
+            </tr>
+        </thead>
+    </table>
+      
 @foreach($establecimientos  as $establecimiento)
 
     <div class="card mt-2 " style="width: 18rem;">
