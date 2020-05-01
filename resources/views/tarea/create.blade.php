@@ -12,7 +12,7 @@
 
 <div class="container justify-content-md-center">
      <div class="row justify-content-md-center mt-3 bt-2 ">
-        <div class="col-6 bg-light m-2 p-3">    
+        <div class="col-6 bg-light m-2 p-3 shadow">    
                 
             <form action='/tarea/' method="POST" enctype="multipart/form-data">
             @csrf

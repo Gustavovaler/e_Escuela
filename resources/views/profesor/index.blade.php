@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="mt-5" style="width: 60%">
-    <table class="table">
+    <table class="table shadow">
       <thead class="thead text-white azul-medio">
         <tr>       
   
