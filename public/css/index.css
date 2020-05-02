@@ -16,3 +16,33 @@ body{
 .gris{
 	color: gray !important;
 }
+.box_wrapper{
+	width: 48%;
+	border: 1px solid #27496d !important;
+	height: 320px;
+	float: left;
+	padding: 10px;
+	background: #fff;
+	border-radius: 5px;
+   
+}
+.image{
+	float: right;
+}
+
+.titulo{
+	display: inline;
+	color: blanchedalmond;
+}
+.desc{
+	font-size: 1.5em;
+}
+.azul-medio{
+	width: 98%;
+}
+#img-card{
+	width: 100%;
+}
+.txt{
+	font-size: 1.3em;
+}

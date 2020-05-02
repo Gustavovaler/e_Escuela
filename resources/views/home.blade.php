@@ -2,37 +2,7 @@
 
 @section('content')
 <style>
-    .box_wrapper{
-        width: 48%;
-        border: 1px solid #27496d !important;
-        height: 320px;
-        float: left;
-        padding: 10px;
-        background: #fff;
-        border-radius: 5px;
-       
-    }
-    .image{
-        float: right;
-    }
-    .text-box{
-        
-       
-    }
-    .titulo{
-        display: inline;
-        color: blanchedalmond;
-    }
-    .desc{
-        font-size: 1.5em;
-    }
-    .azul-medio{
-        width: 98%;
-    }
-    #img-card{
-        width: 100%;
-    }
-    
+   
 
 </style>
 <div class="container">
@@ -43,33 +13,33 @@
 
     <div class="row mt-5">
         <div class="col-md-3 ">
-        <img src="{{asset('img/foto1.jpg')}}" alt="" id="img-card">
-            <p class="p-3 text-center">Podes ver todas las tareas ordenadas por la fecha en que fueron subidas. También podes descargar cualquiera de ellas.</p>
+        <img src="{{asset('img/foto1.jpg')}}" alt="" id="img-card" class="rounded">
+            <p class="p-3 text-center txt">Podes ver todas las tareas ordenadas por la fecha en que fueron subidas. También podes descargar cualquiera de ellas.</p>
         </div>
         <div class="col-md-3">
-            <img src="{{asset('img/foto1.jpg')}}" alt="" id="img-card">
-           <p> Encuentra a tu profesor y descarga su tarea. Estan ordenados alfabeticamente por su apellido para facil visualizacion.</p>
+            <img src="{{asset('img/foto1.jpg')}}" alt="" id="img-card" class="rounded" >
+           <p class="p-3 text-center txt"> Encuentra a tu profesor y descarga su tarea. Estan ordenados alfabeticamente por su apellido para facil visualizacion.</p>
         </div>
         <div class="col-md-3">
-            <img src="{{asset('img/foto1.jpg')}}" alt="" id="img-card">
-            <p>Encuentra a tu profesor y descarga su tarea. Estan ordenados alfabeticamente por su apellido para facil visualizacion.</p>
+            <img src="{{asset('img/foto1.jpg')}}" alt="" id="img-card" class="rounded"  >
+            <p class="p-3 text-center txt ">Las escuelas, institutos y demas centros educativos que representan los profesores que aqui exponen sus tareas </p>
         </div>
         @if (Auth::user()->is_profesor == 1)
         <div class="col-md-3">
-            <img src="{{asset('img/foto1.jpg')}}" alt="" id="img-card">
-            <p>Encuentra a tu profesor y descarga su tarea. Estan ordenados alfabeticamente por su apellido para facil visualizacion.</p>
+            <img src="{{asset('img/foto1.jpg')}}" alt="" id="img-card" class="rounded">
+            <p class="p-3 text-center txt" >Si ya estas list@ para publicar tu tarea y que tus alumnos puedan descargarla solo debes subirla siguiendo este enlace.</p>
         </div>
         @endif
     </div>
-    <div class="row mt-5">
+    <div class="row mt-2">
         <div class="col-md-3 text-center">
-          <a href="" class="btn btn-primary btn-block ">Ver tareas</a>
+          <a href="/tarea/" class="btn btn-primary btn-block ">Ver Tareas</a>
         </div>
         <div class="col-md-3 text-center">
-            <a href="" class="btn btn-primary btn-block">Ver tareas</a>
+            <a href="/profesores/" class="btn btn-primary btn-block">Ver Profesores</a>
         </div>
         <div class="col-md-3 text-center">
-            <a href="" class="btn btn-primary btn-block ">Ver tareas</a>
+            <a href="/establecimientos/" class="btn btn-primary btn-block ">Ver Establecimientos</a>
         </div>
         @if (Auth::user()->is_profesor == 1)
         <div class="col-md-3 text-center">

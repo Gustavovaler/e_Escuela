@@ -15,8 +15,8 @@
 
     <div class="row justify-content-md-center">
         <div class="col-md-auto ">
-            <a href="" class="btn btn-primary btn-lg ">Acceder</a>
-            <a href="" class="btn btn-outline-primary btn-lg">Registrarme</a>
+        <a href="{{ url('/login/') }}" class="btn btn-primary btn-lg mr-4">Acceder</a>
+            <a href="{{ url('/register/') }}" class="btn btn-outline-primary btn-lg">Registrarme</a>
         </div>
     </div>
 </div>
@@ -130,7 +130,7 @@
 <h5 class="mb-1">Registrate gratis</h5>
 </li>
 <li class="list-inline-item">
-<a href="#!" class="btn btn-outline-light btn-rounded">Registrate</a>
+<a href="{{url('/register/')}}" class="btn btn-outline-light btn-rounded">Registrate</a>
 </li>
 </ul>
 <!-- Call to action -->

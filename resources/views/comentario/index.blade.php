@@ -11,8 +11,9 @@
 
 
 <div class="container justify-content-md-center">
+    <p class="display-4 text-center">Que bueno escucharte !</p>
      <div class="row justify-content-md-center mt-3 bt-2 ">
-        <div class="col-6 bg-light m-2 p-3 shadow">    
+        <div class="col-6 gris-fondo rounded m-2 p-3 shadow">    
                 
             <form action='/contacto/' method="POST" enctype="multipart/form-data">
             @csrf
