@@ -41,8 +41,20 @@
                     <input type="submit" class="btn btn-azul-medio text-white  btn-lg btn-block" value="Publicar Tarea">
 
             </form>
+          <div class="row">
+              <div class="col-md-5 align-self-start">
+
+              </div>
+              <div class="col-md-5 align-self-center">
+
+              </div>
+              <div class="col-md-2 mt-2 align-self-end shadow">
+                <a href="/home/">Cancelar</a>
+              </div>
+          </div>
 
         </div>
+        
     </div>
 </div>
 @endsection
