@@ -3,6 +3,7 @@
 @section('content')
 
 <div class="container">
+   
     <div class="mt-5" style="width: 60%">
     <table class="table shadow">
       <thead class="thead text-white azul-medio">
@@ -25,6 +26,20 @@
         @endforeach
       </tbody>
     </table>
+    </div>
+    <div class="row">
+      <div class="col">
+        
+      </div>
+      <div class="col align-self-center">
+        <div style="align-content: center">
+          {{ $profesores->links() }}
+        </div>
+        
+      </div>
+      <div class="col">
+  
+      </div>
     </div>
   </div>
 

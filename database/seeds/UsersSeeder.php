@@ -35,6 +35,7 @@ class UsersSeeder extends Seeder
             'email' => Str::random(10),
             'telefono' => Str::random(10),
             'dni' => Str::random(10),
+           
         ]);
        }
 

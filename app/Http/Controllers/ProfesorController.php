@@ -16,8 +16,10 @@ class ProfesorController extends Controller
      */
     public function index()
     {
-        $profesores = User::where('is_profesor', 1)->orderBy('apellido')->get();
+        
+        $profesores = User::where('is_profesor', 1)->orderBy('apellido')->paginate(15);
         $tareas = Tarea::all();
+       
         return view('profesor.index', compact(['profesores', 'tareas']));
     }
 
@@ -53,6 +55,9 @@ class ProfesorController extends Controller
         $profesor = User::where('id', $id)->get();
         $tareas= Tarea::where('user_id', $id)->get();
         $asignaturas = Asignatura::all();
+        foreach ($tareas as $tarea) {
+            
+        }
         return view('profesor.show', compact(['profesor', 'tareas', 'asignaturas']));
     }
 

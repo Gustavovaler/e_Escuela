@@ -42,7 +42,9 @@
         <div class="text-wrapper">
 
             <p class="display-6">
-                Facilmente podrás subir tus archivos para distribuir con tus alumnos en apenas unos pocos clicks. Tu tarea en jpg , word , pdf, o excel suede ser subida sin rodeos y ser descargada por todos tus alumnos cuantas veces quieras, sin enviar mails ni nada que se le parezca.
+                Facilmente podrás subir tus archivos para distribuir con tus alumnos en apenas unos pocos clicks. 
+                Tu tarea en jpg , word , pdf, o excel puede ser subida sin rodeos y ser descargada por todos tus alumnos cuantas veces quieras, 
+                sin enviar mails ni nada que se le parezca.
             </p>
             <a href="#">Mas info ...</a>
         </div>
@@ -50,7 +52,7 @@
     <div class="col">
         <div class="text-wrapper">
             <p class="display-6">
-                Solo con saber tu nombre o apellido buscandote en la lista de <a href="">profesores</a> podrán
+                Sólo con saber tu nombre o apellido y buscándote en la lista de <a href="">profesores</a> podrán
                  encontrar la tarea con la fecha en que fue publicada y la materia correspondiente .
                   Como alumno no vas a renegar mas con e-mails o whatsapp ni te perderas una tarea porque no te llegó.
             </p>
@@ -60,7 +62,9 @@
     <div class="col">
         <div class="text-wrapper">
             <p class="display-6">
-                Conviértenos en tu canal favorito para compartir las tareas ya seas profesor o alumno. De manera totalmente gratis accedes a tus archivos en estos tiempos donde la enseñanza afronta su etapa mas complicada. En la sección <a href="">contacto</a> esperamos tus dudas o sugerencias.
+                Conviértenos en tu canal favorito para compartir las tareas ya seas profesor o alumno. 
+                De manera totalmente gratis accedes a tus archivos en estos tiempos donde la enseñanza
+                 afronta su etapa mas complicada. En la sección <a href="">contacto</a> esperamos tus dudas o sugerencias.
             </p>
             <a href="#">Mas info ...</a>
 
@@ -77,7 +81,7 @@
 </div>
 <div class="row mt-3 ">
     <div class="col-md-auto">
-        <p class="display-4 gris">Primero desbes registrarte:</p>
+        <p class="display-4 gris">Primero debes registrarte:</p>
     </div>
 </div>
 <div class="row mt-3 justify-content-md-center">
