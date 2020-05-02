@@ -17,7 +17,9 @@
     Composer
     Algún servicio de BBDD con mysql o MariaDB
 
-` git clone https://github.com/gustavovaler/e_escuela`
+` git clone https://github.com/gustavovaler/e_escuela.git`
+
+`cd e_escuela`
 
 ### Luego de eso instalar las dependencias
  
@@ -52,6 +54,8 @@
         ` php artisan db:seed`
 
 ### Correr el servidor de pruebas
+
+    `php artisan key:generate`
 
     `php artisan serve`
 
