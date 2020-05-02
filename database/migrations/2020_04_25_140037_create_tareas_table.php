@@ -19,7 +19,6 @@ class CreateTareasTable extends Migration
             $table->timestamps();
             $table->char('archivo', 200);
             $table->char('curso', 50);
-            $table->char('asignatura', 100);
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
         });

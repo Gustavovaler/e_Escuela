@@ -12,18 +12,18 @@ class UsersSeeder extends Seeder
      */
     public function run()
     {
-    //    DB::table('users')->insert([
-    //        'name' => 'mat3fin',
-    //        'apellido' => 'Lousf3tou',
-    //        'is_profesor' => 0,
-    //        'password' => 'paska3sflksalk',
-    //        'email' => 'asdma23f2sd@ga.com',
-    //        'telefono' => '45454f3545',
-    //        'dni' => '324234f332',
+       DB::table('users')->insert([
+           'name' => 'mat3fin',
+           'apellido' => 'Lousf3tou',
+           'is_profesor' => 0,
+           'password' => 'paska3sflksalk',
+           'email' => 'asdma23f2sd@ga.com',
+           'telefono' => '45454f3545',
+           'dni' => '324234f332',
 
 
 
-    //    ]);
+       ]);
 
        $arrays = range(0, 100);
        foreach ($arrays as $valor) {
