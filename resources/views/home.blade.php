@@ -13,20 +13,20 @@
 
     <div class="row mt-5">
         <div class="col-md-3 ">
-        <img src="{{asset('img/foto1.jpg')}}" alt="" id="img-card" class="rounded">
+        <img src="{{asset('img/tarea.svg')}}" alt="" id="img-card" class="rounded">
             <p class="p-3 text-center txt">Podes ver todas las tareas ordenadas por la fecha en que fueron subidas. También podes descargar cualquiera de ellas.</p>
         </div>
         <div class="col-md-3">
-            <img src="{{asset('img/foto1.jpg')}}" alt="" id="img-card" class="rounded" >
+            <img src="{{asset('img/profesor.png')}}" alt="" id="img-card" class="rounded" >
            <p class="p-3 text-center txt"> Encuentra a tu profesor y descarga su tarea. Estan ordenados alfabeticamente por su apellido para facil visualizacion.</p>
         </div>
         <div class="col-md-3">
-            <img src="{{asset('img/foto1.jpg')}}" alt="" id="img-card" class="rounded"  >
+            <img src="{{asset('img/escuela.png')}}" alt="" id="img-card" class="rounded"  >
             <p class="p-3 text-center txt ">Las escuelas, institutos y demas centros educativos que representan los profesores que aqui exponen sus tareas </p>
         </div>
         @if (Auth::user()->is_profesor == 1)
         <div class="col-md-3">
-            <img src="{{asset('img/foto1.jpg')}}" alt="" id="img-card" class="rounded">
+            <img src="{{asset('img/tarea-crear.png')}}" alt="" id="img-card" class="rounded">
             <p class="p-3 text-center txt" >Si ya estas list@ para publicar tu tarea y que tus alumnos puedan descargarla solo debes subirla siguiendo este enlace.</p>
         </div>
         @endif

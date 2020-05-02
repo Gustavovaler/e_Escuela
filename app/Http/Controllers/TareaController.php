@@ -39,7 +39,7 @@ class TareaController extends Controller
     {
         if (Auth::check()){
             if(Auth::user()->is_profesor){
-                $asignaturas = Asignatura::all();
+                $asignaturas = Asignatura::all()->sortBy('asignatura');
                 return view('tarea.create', compact('asignaturas'));
             }
             else{
