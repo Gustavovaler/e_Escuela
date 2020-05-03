@@ -6,6 +6,13 @@
 
 </style>
 <div class="container">
+    @if ($confirmed == 1)
+   <script>
+       alert("Tarea guardada exitosamente!!!");
+   </script>
+
+    @endif
+   
 
     <div class="title">
         <p class="display-4">Panel de tareas</p>

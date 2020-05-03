@@ -18,11 +18,11 @@
             @csrf
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Curso o Grado</label>
-                    <input type="text" class="form-control" name="curso" placeholder="Ej.  2do - 1ra T.Tarde" required>
+                    <input type="text" class="form-control" name="curso" placeholder="Ej.  2do - 1ra T.Tarde" maxlength="48" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect2">Materia o asignatura.</label>
-                    <select multiple class="form-control" id="exampleFormControlSelect2" name="asignatura_id">
+                    <select multiple class="form-control" id="exampleFormControlSelect2" name="asignatura_id" required>
                         @foreach($asignaturas as $asignatura)
                             <option value="{{$asignatura->id}}">{{$asignatura->asignatura}}</option>
                         @endforeach
@@ -31,11 +31,16 @@
                    
                 <div class="form-group">
                     <label for="descripcion">Descripción (Opcional)</label>
-                    <textarea class="form-control"  rows="3" name="descripcion"></textarea>
+                    <textarea class="form-control"  rows="3" name="descripcion" maxlength="240"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlFile1">Elegir el archivo de la tarea.</label>
-                    <input type="file" class="btn btn-primary" id="exampleFormControlFile1" name="archivo"required>
+                    <label for="fileInput" ><span class="btn btn-primary" id="labelFile">Selecionar archvo</span></label>
+                    
+                    <span id="info" class="ml-4 btn btn-outline-success" style="display:none"></span>
+                    <input type="file"   
+                    accept="image/gif,image/jpeg,image/jpg,image/png,application/vnd.ms-excel,
+                    application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, .pdf, .txt,  .svg"
+                    onchange="chooseFile()" name="archivo" required hidden id="fileInput" maxlength="198">
                 </div>
                     <input type="text" name="user_id" class="form-control" required value="{{ Auth::user()->id }}" hidden><br>
                     <input type="submit" class="btn btn-azul-medio text-white  btn-lg btn-block" value="Publicar Tarea">
@@ -57,4 +62,15 @@
         
     </div>
 </div>
+<script>
+
+function chooseFile(){
+
+let fileInput = document.getElementById('fileInput').files[0].name;
+document.getElementById('info').innerHTML = fileInput;
+let info = document.getElementById("info").style.display = "inline";
+
+}
+
+</script>
 @endsection

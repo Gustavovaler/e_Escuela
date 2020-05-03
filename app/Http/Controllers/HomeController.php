@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $confirmed = 0;
+        return view('home', compact('confirmed'));
     }
 }

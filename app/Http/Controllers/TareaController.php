@@ -57,20 +57,27 @@ class TareaController extends Controller
      */
     public function store(Request $request, Tarea $tarea)
     {  
-        $file =  $request->file('archivo');
-        $nombre_archivo = time() . $file->getClientOriginalName();  
-        $archivo_original = $file->getClientOriginalName();
-        $tarea->descripcion = $request->input('descripcion');
-        $tarea->archivo = $nombre_archivo;
-        $tarea->archivo_verbose = $archivo_original;
-        $tarea->curso = $request->input('curso');
-        $tarea->asignatura_id = $request->input('asignatura_id');
-        $tarea->user_id = $request->input('user_id');
-        $tarea->save();
-        if (isset($file)) {
-           $file->move(storage_path().'/app/files', $nombre_archivo);
+        try {
+            $file =  $request->file('archivo');
+            $nombre_archivo = time() . $file->getClientOriginalName();  
+            $archivo_original = $file->getClientOriginalName();
+            $tarea->descripcion = $request->input('descripcion');
+            $tarea->archivo = $nombre_archivo;
+            $tarea->archivo_verbose = $archivo_original;
+            $tarea->curso = $request->input('curso');
+            $tarea->asignatura_id = $request->input('asignatura_id');
+            $tarea->user_id = $request->input('user_id');
+            $tarea->save();
+            if (isset($file)) {
+               $file->move(storage_path().'/app/files', $nombre_archivo);
+            }        
+            $confirmed = 1;
+        } catch (\Throwable $th) {
+            $creado = 0;
+            return view('home', compact('creado'));
         }
-        return redirect('/tarea');
+      
+        return view('home' , compact('confirmed'));
     }
 
     /**
