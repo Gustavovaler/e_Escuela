@@ -53,7 +53,7 @@ class ProfesorController extends Controller
     public function show($id)
     {
         $profesor = User::where('id', $id)->get();
-        $tareas= Tarea::where('user_id', $id)->get();
+        $tareas= Tarea::where('user_id', $id)->orderBy('created_at', 'desc')->get();
         $asignaturas = Asignatura::all();
         foreach ($tareas as $tarea) {
             
