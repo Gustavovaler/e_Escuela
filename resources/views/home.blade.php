@@ -1,14 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-<style>
-   
 
-</style>
 <div class="container">
+    <div class="alert alert-success" role="alert" style="left:250px;width:60%;display: none; position: absolute; margin:auto;" id="tarea_exitosa">
+       <h3> La tearea se guardó exitosamente !!</h3> 
+    </div>
     @if ($confirmed == 1)
    <script>
-       alert("Tarea guardada exitosamente!!!");
+       setTimeout(function(){ document.getElementById('tarea_exitosa').style.display = 'block';}, 300);
+       setTimeout(function(){document.getElementById('tarea_exitosa').style.display = 'none';}, 4000);
+       
    </script>
 
     @endif
