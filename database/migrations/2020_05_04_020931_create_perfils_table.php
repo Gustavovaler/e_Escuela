@@ -14,8 +14,15 @@ class CreatePerfilsTable extends Migration
     public function up()
     {
         Schema::create('perfils', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->id();
             $table->timestamps();
+            $table->char('avatar',100);
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')
+            ->references('id')->on('users')
+            ->onDelete('cascade');
+            
         });
     }
 
