@@ -1,6 +1,23 @@
 # e-Escuela
 
-## Proyecto Web que proporciona una mejora en la comunicación Alumno-Profesor, con el objetivo de intercambio de contenido entre ambas partes.
+<p align="center">
+ <img width="100px" src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="e-Escuela" />
+ <h2 align="center">e-Escuela</h2>
+ <p align="center"><b>Proyecto Web que proporciona una mejora en la comunicación Alumno-Profesor, con el objetivo de intercambio de contenido entre ambas partes.</b></p>
+</p>
+  <p align="center">
+    <a href="https://github.com/anuraghazra/github-readme-stats/actions">
+      <img alt="Tests Passing" src="https://github.com/anuraghazra/github-readme-stats/workflows/Test/badge.svg" />
+    </a>
+        <a href="https://github.com/Gustavovaler/e_Escuela/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/Gustavovaler/e_Escuela?color=0088ff" />
+    </a>
+    <a href="https://github.com/Gustavovaler/e_Escuela/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Gustavovaler/e_Escuela?color=0088ff" />
+    </a>
+    <br />
+    <br />
+  </p>
 
 ## Problemática actual
 
