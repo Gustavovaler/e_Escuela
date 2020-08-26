@@ -67,7 +67,7 @@ Por eso se busca que esta iniciativa sea de conocimiento público. Con el objeti
             DB_PASSWORD=
         
     Por los datos de tu gestor de db y credenciales.
-    Una vez echo guardar y renombrar  " .env "
+    Una vez hecho guardar y renombrar  " .env "
 
     Nota: Si usas MariaDB y tienes problemas de conexión cambia DB_PORT: 3307 .
 
