@@ -4,6 +4,7 @@
  <img width="100px" src="https://github.com/Gustavovaler/e_Escuela/blob/master/resources/readme/libro.svg" align="center" alt="e-Escuela" />
  <h2 align="center">e-Escuela</h2>
  <p align="center"><b>Proyecto Web que proporciona una mejora en la comunicación Alumno-Profesor, con el objetivo de intercambio de contenido entre ambas partes.</b></p>
+
 </p>
   <p align="center">
     <a href="https://github.com/Gustavovaler/e_Escuela/actions/new">
@@ -16,8 +17,14 @@
       <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Gustavovaler/e_Escuela?color=0088ff" />
     </a>
     <br />
-    <br />
+    <p align="center">
+    <a href="https://github.com/Gustavovaler/e_Escuela/blob/master/README.md">Español</a>
+    ·
+    <a href="https://github.com/Gustavovaler/e_Escuela/blob/master/resources/readme/English.md">English</a>
+    ·
+    <a href="https://github.com/Gustavovaler/e_Escuela/blob/master/resources/readme/%20Portugu%C3%AAs%20Brasileiro.md">Português Brasileiro</a>
   </p>
+</p>
 
 ## Problemática actual
 
