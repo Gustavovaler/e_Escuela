@@ -22,7 +22,7 @@
     ·
     <a href="https://github.com/Gustavovaler/e_Escuela/blob/master/resources/readme/English.md">English</a>
     ·
-    <a href="https://github.com/Gustavovaler/e_Escuela/blob/master/resources/readme/%20Portugu%C3%AAs%20Brasileiro.md">Português Brasileiro</a>
+    <a href="https://github.com/Gustavovaler/e_Escuela/blob/master/resources/readme/Portugu%C3%AAs%20Brasileiro.md">Português Brasileiro</a>
   </p>
 </p>
 
