@@ -27,7 +27,7 @@ La comunicación por medios digitales entre los maestros y sus alumn@s presentan
 ## Solución
 
 Por esta razón, decidí comenzar a realizar este proyecto web para facilitar una plataforma centralizada donde los docentes puedan 
-subir sus archivos y los alumn@s descargarlos de forma accesible, y organizada. Facilitando el trabajo que realizan tanto los maestros como sus alumn@s para que alcacen sus objetivos. 
+subir sus archivos y los alumn@s descargarlos de forma accesible, y organizada. Facilitando el trabajo que realizan tanto los maestros como sus alumn@s para que alcancen sus objetivos. 
 
 Actualmente la situación en Argentina se rige la suspensión de clases por tiempo indeterminado. 
 Por eso se busca que esta iniciativa sea de conocimiento público. Con el objetivo de solucinar los problemas mencionados y que sea una herramienta que se utilice en los salones de clases virtualmente día a día. 
