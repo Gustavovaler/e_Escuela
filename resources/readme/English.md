@@ -1,7 +1,7 @@
 # e-Escuela
 
 <p align="center">
- <img width="100px" src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="e-Escuela" />
+ <img width="100px" src="https://github.com/Gustavovaler/e_Escuela/blob/master/resources/readme/libro.svg" align="center" alt="e-Escuela" />
  <h2 align="center">e-Escuela</h2>
  <p align="center"><b>Web project that provides an improvement in the Student-Teacher communication, with the aim of exchanging content.</b></p>
 </p>
@@ -16,8 +16,14 @@
       <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Gustavovaler/e_Escuela?color=0088ff" />
     </a>
     <br />
-    <br />
+    <p align="center">
+    <a href="https://github.com/Gustavovaler/e_Escuela/blob/master/README.md">Español</a>
+    ·
+    <a href="https://github.com/Gustavovaler/e_Escuela/blob/master/resources/readme/English.md">English</a>
+    ·
+    <a href="https://github.com/Gustavovaler/e_Escuela/blob/master/resources/readme/%20Portugu%C3%AAs%20Brasileiro.md">Português Brasileiro</a>
   </p>
+</p>
 
 ## What is the problem?
 
